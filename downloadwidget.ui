@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DownloadWidget</class>
+ <widget class="QWidget" name="DownloadWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>769</width>
+    <height>466</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="downloadLayout">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="downlaodTabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="downloadTab">
+        <attribute name="title">
+         <string>正在下载</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="downloadTabLayout">
+           <item>
+            <widget class="QListWidget" name="downloadListWidget"/>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="downloadBottomButtonLayout">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="startAllBtn">
+               <property name="text">
+                <string>全部下载</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="stopAllBtn">
+               <property name="text">
+                <string>全部暂停</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="cancelAllBtn">
+               <property name="text">
+                <string>全部取消</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="historyTab">
+        <attribute name="title">
+         <string>已下载</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="historyTabLayout">
+           <item row="0" column="0">
+            <widget class="QListWidget" name="historyListWidget"/>
+           </item>
+           <item row="1" column="0">
+            <layout class="QHBoxLayout" name="historyBottomButtonLayout">
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="clearAllBtn">
+               <property name="text">
+                <string>清空</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

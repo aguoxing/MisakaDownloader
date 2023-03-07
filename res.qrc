@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>Bilibili-video.svg</file>
+        <file>CodeSandbox.svg</file>
+        <file>download.svg</file>
+        <file>home.svg</file>
+        <file>info-circle.svg</file>
+        <file>setting.svg</file>
+        <file>user.svg</file>
+        <file>bilibili_logo.svg</file>
+        <file>close.svg</file>
+        <file>delete.svg</file>
+        <file>pause.svg</file>
+        <file>play.svg</file>
+        <file>folder-open.svg</file>
+    </qresource>
+</RCC>

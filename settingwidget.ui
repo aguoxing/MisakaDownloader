@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingWidget</class>
+ <widget class="QWidget" name="SettingWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="routineGroupBox">
+       <property name="title">
+        <string>常规</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="finishGridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="afterDownload">
+            <property name="text">
+             <string>下载完后</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QRadioButton" name="closeNone">
+            <property name="text">
+             <string>无</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QRadioButton" name="downloadExit">
+            <property name="text">
+             <string>退出程序</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QRadioButton" name="downloadShutdown">
+            <property name="text">
+             <string>关闭计算机</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="exitGridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="closeMainPlanel">
+            <property name="text">
+             <string>关闭主面板</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QRadioButton" name="closeExit">
+            <property name="text">
+             <string>退出程序</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QRadioButton" name="closeMinimize">
+            <property name="text">
+             <string>最小化到系统托盘</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QGroupBox" name="downloadGroupBox">
+       <property name="title">
+        <string>下载</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="pathGridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="downloadPath">
+            <property name="text">
+             <string>下载目录</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="filePath">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QToolButton" name="changePathBtn">
+            <property name="text">
+             <string>更改</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="videoGridLayout">
+          <item row="0" column="4">
+           <widget class="QComboBox" name="qualitySelect">
+            <item>
+             <property name="text">
+              <string>64K</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>132K</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>192K</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Dolby Atoms</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Hi-Res 无损</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="7">
+           <widget class="QComboBox" name="audioSelect">
+            <item>
+             <property name="text">
+              <string>H.264/AVC</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>H.256/HEVC</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>AV1</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="encodingSelect">
+            <item>
+             <property name="text">
+              <string>360P 流畅</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>480P 清晰</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>720P 高清</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>720P 60帧</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1080P 高清</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1080P 高帧率</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1080P 60帧</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>4K 超清</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>HDR 真彩</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>杜比视界</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>超高清 8K</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="6">
+           <widget class="QLabel" name="auditLabel">
+            <property name="text">
+             <string>视频音质</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="videoEncodingLabel">
+            <property name="text">
+             <string>视频编码</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="qualityLabel">
+            <property name="text">
+             <string>视频画质</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="8">
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QGridLayout" name="contentLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="downloadContent">
+            <property name="text">
+             <string>下载内容</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="downloadAll">
+            <property name="text">
+             <string>所有</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="downloadVideo">
+            <property name="text">
+             <string>视频</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QCheckBox" name="downloadAudio">
+            <property name="text">
+             <string>音频</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QCheckBox" name="downloadCaption">
+            <property name="text">
+             <string>字幕</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QCheckBox" name="downloadCarrage">
+            <property name="text">
+             <string>弹幕</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="6">
+           <widget class="QCheckBox" name="downloadCover">
+            <property name="text">
+             <string>封面</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="7">
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>网络</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="userAgentLabel">
+            <property name="text">
+             <string>UserAgent</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="userAgentInput">
+            <property name="text">
+             <string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="userAgentSelect">
+            <item>
+             <property name="text">
+              <string>Windows(Chrome)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Android</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ios</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>自定义</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -16,16 +16,40 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    aboutwidget.cpp \
+    downloaditem.cpp \
+    downloadwidget.cpp \
+    homewidget.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    mediaitem.cpp \
+    settingwidget.cpp \
+    toolswidget.cpp
 
 HEADERS += \
-    mainwindow.h
+    aboutwidget.h \
+    downloaditem.h \
+    downloadwidget.h \
+    homewidget.h \
+    mainwindow.h \
+    mediaitem.h \
+    settingwidget.h \
+    toolswidget.h
 
 FORMS += \
-    mainwindow.ui
+    aboutwidget.ui \
+    downloaditem.ui \
+    downloadwidget.ui \
+    homewidget.ui \
+    mainwindow.ui \
+    mediaitem.ui \
+    settingwidget.ui \
+    toolswidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc
